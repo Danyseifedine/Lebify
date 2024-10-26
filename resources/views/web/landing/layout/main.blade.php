@@ -58,10 +58,7 @@
     <!-- Canonical URL -->
     <link rel="canonical" href="{{ url()->current() }}">
 
-    <!-- Alternate Language Pages -->
-    @foreach (config('app.available_locales') as $locale)
-        <link rel="alternate" hreflang="{{ $locale }}" href="{{ url()->current() }}?lang={{ $locale }}">
-    @endforeach
+
 
     <!-- Security Headers -->
     <meta http-equiv="X-XSS-Protection" content="1; mode=block">
